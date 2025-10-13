@@ -9,7 +9,7 @@ const Prime = (num) => {
 const solution = (n) => {
     let arr = Array.from({length: n}, (_, k) => k + 1);
     console.log(arr);
-    let composite = arr.filter((n)=> !Prime(n)&& n!==1);
+    let composite = arr.filter((n)=> !Prime(n)&& n > 1);
     console.log('composite',composite);
     return composite.length;
 
